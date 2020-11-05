@@ -27,11 +27,16 @@ import styles from './styles';
 
 export default function App() 
 {
+  state = {
+    number : "0"
+  }
   return (
     <>
-    <View style={styles.ViewStyle}>
-      <Text style={styles.TextStyle}>Root</Text>
-      <AddNumberRoot/>
+    <View style={{flex:1, flexDirection:'column', justifyContent:"center"}}>
+      <View style={styles.ViewStyle}>
+        <Text style={styles.TextStyle}>Root</Text>
+        <AddNumberRoot number = {state.number}></AddNumberRoot>
+      </View>
     </View>
     </>
   );
