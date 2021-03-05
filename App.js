@@ -34,7 +34,7 @@ export default function App()
     <>
     <View style={{flex:1, flexDirection:'column', justifyContent:"center"}}>
       <View style={styles.ViewStyle}>
-        <Text style={styles.TextStyle}>Root</Text>
+        <Text style={styles.TextStyle}>Root Text</Text>
         <AddNumberRoot number = {state.number}></AddNumberRoot>
       </View>
     </View>
